@@ -1,6 +1,6 @@
 {
   "name": "hugo-lunr-indexer",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Generate Lunr indices for Hugo static sites by parsing front matter.",
   "main": "lib/hli.js",
   "bin": {
@@ -11,9 +11,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "index": "hli -i 'content/**' -o 'public/lunr.json' -l 'toml'",
-    "test:yaml": "hli -i 'content/text-yaml.md' -o 'public/lunr-yaml.json' -l 'yaml'",
-    "test:toml": "hli -i 'content/text-toml.md' -o 'public/lunr-toml.json' -l 'toml'",
+    "index": "hli -i 'content/**' -o 'public/lunr.json' -l 'toml' -d '+++'",
+    "test:yaml": "hli -i 'content/test-yaml.md' -o 'public/lunr-yaml.json' -l 'yaml' -d '---'",
+    "test:toml": "hli -i 'content/test-toml.md' -o 'public/lunr-toml.json' -l 'toml' -d '+++'",
     "test:api": "test/api.js",
     "test": "npm run test:yaml & npm run test:toml & npm run test:api"
   },

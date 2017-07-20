@@ -19,10 +19,11 @@ $ npm install hugo-lunr-indexer
 # Default options #
 ###################
 
-$ hli \                      # hli -> hugo-lunr-indexer (alias)
+$ hli \                      # hli -> hugo-lunr-indexer
 > -i "content/**" \          # input (path)
 > -o "public/lunr.json" \    # output (path)
-> -l "toml"                  # language (toml|yaml)
+> -l "toml"                  # language (toml | yaml)
+> -d "+++"                   # delimiter (toml: +++ | yaml: ---)
 ```
 
 ### NPM Scripts
@@ -30,7 +31,7 @@ $ hli \                      # hli -> hugo-lunr-indexer (alias)
 ```javascript
 ...
 "scripts": {
-  "index": "hli -i 'content/posts/**' -o 'public/indices/lunr.json' -l 'yaml'"
+  "index": "hli -i 'content/posts/**' -o 'public/indices/lunr.json' -l 'yaml' -d '---'"
 },
 ...
 ```
@@ -47,5 +48,6 @@ var Indexer = new hli();
 Indexer.setInput('content/blog/**');
 Indexer.setOutput('public/static/index.json');
 Indexer.setLanguage('toml');
+Indexer.setDelimiter('---');
 Indexer.index();
 ```
