@@ -7,7 +7,7 @@ Generate [Lunr](https://lunrjs.com/) indexes for [Hugo](https://gohugo.io/) stat
 ### Install with npm
 
 ```shell
-$ npm install hli
+$ npm install hugo-lunr-indexer
 ```
 
 ## Usage
