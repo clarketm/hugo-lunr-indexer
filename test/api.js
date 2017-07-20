@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var hli = require('../');
+var Indexer = new hli();
+Indexer.setInput('content/**');
+Indexer.setOutput('public/index.json');
+indexer.setLanguage('toml');
+Indexer.index();
