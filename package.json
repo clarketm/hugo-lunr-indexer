@@ -5,14 +5,17 @@
   "main": "lib/hli.js",
   "bin": {
     "hli": "bin/hli.js",
-    "hugo-lunr-indexer": "bin/index.js"
+    "hugo-lunr-indexer": "bin/hli.js"
   },
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "test": "test/api.js",
-    "index": "hli -i 'content/**' -o 'public/lunr.json' -l 'toml'"
+    "index": "hli -i 'content/**' -o 'public/lunr.json' -l 'toml'",
+    "test:yaml": "hli -i 'content/text-yaml.md' -o 'public/lunr-yaml.json' -l 'yaml'",
+    "test:toml": "hli -i 'content/text-toml.md' -o 'public/lunr-toml.json' -l 'toml'",
+    "test:api": "test/api.js",
+    "test": "npm run test:yaml & npm run test:toml & npm run test:api"
   },
   "keywords": [
     "lunr",
