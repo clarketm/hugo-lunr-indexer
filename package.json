@@ -1,0 +1,35 @@
+{
+  "name": "hugo-lunr-indexer",
+  "version": "1.0.0",
+  "description": "Generate Lunr indices for Hugo static sites by parsing front matter.",
+  "main": "lib/index.js",
+  "bin": {
+    "hli": "bin/index.js",
+    "hugo-lunr-indexer": "bin/index.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "test/api.js",
+    "index": "hli -i 'content/**' -o 'public/lunr.json' -l 'toml'"
+  },
+  "keywords": [
+    "lunr",
+    "hugo",
+    "index",
+    "indexer",
+    "toml",
+    "yaml"
+  ],
+  "author": "Travis Clarke <travis.m.clarke@gmail.com> (https://www.travismclarke.com/)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "glob": "^7.1.2",
+    "gray-matter": "^3.0.2",
+    "remove-markdown": "^0.2.0",
+    "striptags": "^3.0.1",
+    "toml": "^2.3.2"
+  },
+  "devDependencies": {}
+}
