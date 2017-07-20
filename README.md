@@ -46,6 +46,6 @@ var hli = require('hugo-lunr-indexer');
 var Indexer = new hli();
 Indexer.setInput('content/blog/**');
 Indexer.setOutput('public/static/index.json');
-indexer.setLanguage('toml');
+Indexer.setLanguage('toml');
 Indexer.index();
 ```
