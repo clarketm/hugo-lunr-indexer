@@ -19,7 +19,7 @@ $ npm install hli
 # Default options #
 ###################
 
-$ hli \
+$ hli \                      # hli -> hugo-lunr-indexer (alias)
 > -i "content/**" \          # input (path)
 > -o "public/lunr.json" \    # output (path)
 > -l "toml"                  # language (toml|yaml)
