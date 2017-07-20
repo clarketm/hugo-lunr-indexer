@@ -3,6 +3,6 @@
 var hli = require('../');
 var Indexer = new hli();
 Indexer.setInput('content/**');
-Indexer.setOutput('public/index.json');
-indexer.setLanguage('toml');
+Indexer.setOutput('public/lunr.json');
+Indexer.setLanguage('toml');
 Indexer.index();
