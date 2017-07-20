@@ -1,6 +1,6 @@
 # Hugo-Lunr-Indexer (HLI)
 
-Generate [Lunr](https://lunrjs.com/) indexes for [Hugo](https://gohugo.io/) static sites by parsing front matter (TOML or YAML).
+Generate [Lunr](https://lunrjs.com/) indexes for [Hugo](https://gohugo.io/) static sites by parsing front matter.
 
 ## Installation
 
@@ -15,11 +15,14 @@ $ npm install hli
 ### CLI
 
 ```shell
-# Options
+###################
+# Default options #
+###################
+
 $ hli \
-> -i 'content/**' \          # input (path)
-> -o 'public/lunr.json' \    # output (path)
-> -l 'toml'                  # language (toml|yaml)
+> -i "content/**" \          # input (path)
+> -o "public/lunr.json" \    # output (path)
+> -l "toml"                  # language (toml|yaml)
 ```
 
 ### NPM Scripts
