@@ -26,6 +26,7 @@
     "yaml"
   ],
   "author": "Travis Clarke <travis.m.clarke@gmail.com> (https://www.travismclarke.com/)",
+  "repository": "clarketm/hugo-lunr-indexer",
   "license": "Apache-2.0",
   "dependencies": {
     "glob": "^7.1.2",
