@@ -1,0 +1,12 @@
+[
+    {
+        "uri": "/test-yaml",
+        "title": "YAML test",
+        "content": "\nYAML content\n",
+        "tags": [
+            "yaml1",
+            "yaml2",
+            "yaml3"
+        ]
+    }
+]

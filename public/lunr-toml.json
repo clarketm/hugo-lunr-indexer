@@ -1,0 +1,12 @@
+[
+    {
+        "uri": "/test-toml",
+        "title": "TOML test",
+        "content": "\nTOML content\n",
+        "tags": [
+            "toml1",
+            "toml2",
+            "toml3"
+        ]
+    }
+]
