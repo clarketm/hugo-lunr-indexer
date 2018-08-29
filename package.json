@@ -1,6 +1,6 @@
 {
   "name": "hugo-lunr-indexer",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Generate Lunr indices for Hugo static sites by parsing front matter.",
   "main": "./lib/hli.js",
   "bin": {
