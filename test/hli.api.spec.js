@@ -36,7 +36,6 @@ describe("hli api", () => {
     it("should set `delimiter` property", () => {
       expect(Indexer.delimiter).toEqual(delimiter);
     });
-
   });
 
   describe("#constructor (language) ~ yaml", () => {
@@ -70,7 +69,6 @@ describe("hli api", () => {
     it("should set `delimiter` property", () => {
       expect(Indexer.delimiter).toEqual(delimiter);
     });
-
   });
 
   describe("#constructor (input, output, language, delimiter)", () => {

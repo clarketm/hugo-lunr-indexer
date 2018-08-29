@@ -2,23 +2,25 @@
   "name": "hugo-lunr-indexer",
   "version": "1.1.1",
   "description": "Generate Lunr indices for Hugo static sites by parsing front matter.",
-  "main": "lib/hli.js",
+  "main": "./lib/hli.js",
   "bin": {
-    "hli": "bin/hli.js",
-    "hugo-lunr-indexer": "bin/hli.js"
+    "hli": "./bin/hli.js",
+    "hugo-lunr-indexer": "./bin/hli.js"
   },
   "directories": {
-    "lib": "lib"
+    "bin": "./bin",
+    "lib": "./lib"
   },
   "scripts": {
     "index": "node ./bin/hli.js -i 'content/**' -o 'public/lunr.json' -l 'toml' -d '+++'",
     "lint": "eslint --fix ./bin ./lib ./test",
     "prettier": "prettier --write '**/*.js'",
-    "prep": "yarn lint && yarn prettier && yarn test",
     "test:api": "test/api.js",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:cov": "jest --coverage"
+    "test:cov": "jest --coverage",
+    "prep": "yarn lint && yarn prettier && yarn test",
+    "prepublishOnly": "yarn prep && bash ./publish.sh"
   },
   "keywords": [
     "lunr",
