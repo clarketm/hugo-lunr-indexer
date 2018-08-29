@@ -8,7 +8,7 @@ Generate [Lunr](https://lunrjs.com/) indexes for [Hugo](https://gohugo.io/) stat
 
 ## Installation
 
-### Install with npm
+#### Install with npm
 
 ```shell
 $ npm install hugo-lunr-indexer
@@ -16,7 +16,7 @@ $ npm install hugo-lunr-indexer
 
 ## Usage
 
-### CLI
+#### CLI
 
 ```shell
 ###################
@@ -24,13 +24,13 @@ $ npm install hugo-lunr-indexer
 ###################
 
 $ hli \                      # hli -> hugo-lunr-indexer
-> -i "content/**" \          # input (path)
-> -o "public/lunr.json" \    # output (path)
-> -l "toml"                  # language (toml | yaml)
-> -d "+++"                   # delimiter (toml: +++ | yaml: ---)
+  -i "content/**" \          # input (path)
+  -o "public/lunr.json" \    # output (path)
+  -l "toml"                  # language (toml | yaml)
+  -d "+++"                   # delimiter (toml: +++ | yaml: ---)
 ```
 
-### NPM Scripts
+#### NPM Scripts
 
 ```javascript
 ...
@@ -44,7 +44,7 @@ $ hli \                      # hli -> hugo-lunr-indexer
 $ npm run index
 ```
 
-### API
+#### API
 
 ```javascript
 var hli = require('hugo-lunr-indexer');
@@ -55,3 +55,9 @@ Indexer.setLanguage('toml');
 Indexer.setDelimiter('---');
 Indexer.index();
 ```
+
+## Sites using hugo-lunr-indexer
+* https://blog.travismclarke.com/
+
+## License
+Apache-2.0 © [Travis Clarke](https://www.travismclarke.com/)
