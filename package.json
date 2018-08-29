@@ -11,11 +11,14 @@
     "lib": "lib"
   },
   "scripts": {
-    "index": "hli -i 'content/**' -o 'public/lunr.json' -l 'toml' -d '+++'",
-    "test:yaml": "hli -i 'content/test-yaml.md' -o 'public/lunr-yaml.json' -l 'yaml' -d '---'",
-    "test:toml": "hli -i 'content/test-toml.md' -o 'public/lunr-toml.json' -l 'toml' -d '+++'",
+    "index": "node ./bin/hli.js -i 'content/**' -o 'public/lunr.json' -l 'toml' -d '+++'",
+    "lint": "eslint --fix ./bin ./lib ./test",
+    "prettier": "prettier --write '**/*.js'",
+    "prep": "yarn lint && yarn prettier && yarn test",
     "test:api": "test/api.js",
-    "test": "npm run test:yaml & npm run test:toml & npm run test:api"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage"
   },
   "keywords": [
     "lunr",
@@ -26,7 +29,8 @@
     "yaml"
   ],
   "author": "Travis Clarke <travis.m.clarke@gmail.com> (https://www.travismclarke.com/)",
-  "repository": "clarketm/hugo-lunr-indexer",
+  "repository": "github:clarketm/hugo-lunr-indexer",
+  "homepage": "https://github.com/clarketm/hugo-lunr-indexer#readme",
   "license": "Apache-2.0",
   "dependencies": {
     "glob": "^7.1.2",
@@ -35,5 +39,14 @@
     "striptags": "^3.0.1",
     "toml": "^2.3.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "@types/shelljs": "^0.8.0",
+    "eslint": "^5.4.0",
+    "jest": "^23.5.0",
+    "mock-fs": "^4.6.0",
+    "prettier": "^1.14.2",
+    "shelljs": "^0.8.2",
+    "yeoman-assert": "^3.1.1"
+  }
 }
