@@ -1,5 +1,9 @@
 # Hugo-Lunr-Indexer (HLI)
 
+[![NPM release](https://img.shields.io/npm/v/hugo-lunr-indexer.svg)](https://www.npmjs.com/package/hugo-lunr-indexer)
+[![Build Status](https://circleci.com/gh/clarketm/hugo-lunr-indexer.svg?style=shield)](https://circleci.com/gh/clarketm/hugo-lunr-indexer)
+[![License](https://img.shields.io/npm/l/hugo-lunr-indexer.svg)](LICENSE.md)
+
 Generate [Lunr](https://lunrjs.com/) indexes for [Hugo](https://gohugo.io/) static sites by parsing front matter.
 
 ## Installation
