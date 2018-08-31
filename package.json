@@ -15,7 +15,6 @@
     "index": "node ./bin/hli.js -i 'content/**' -o 'public/lunr.json' -l 'toml' -d '+++'",
     "lint": "eslint --fix ./bin ./lib ./test",
     "prettier": "prettier --write '**/*.js'",
-    "test:api": "test/api.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
