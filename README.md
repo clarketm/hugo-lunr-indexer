@@ -1,4 +1,4 @@
-# Hugo-Lunr-Indexer (HLI)
+# [Hugo-Lunr-Indexer (HLI)](https://blog.travismclarke.com/project/hugo-lunr-indexer/)
 
 [![NPM release](https://img.shields.io/npm/v/hugo-lunr-indexer.svg)](https://www.npmjs.com/package/hugo-lunr-indexer)
 [![Build Status](https://circleci.com/gh/clarketm/hugo-lunr-indexer.svg?style=shield)](https://circleci.com/gh/clarketm/hugo-lunr-indexer)
@@ -8,7 +8,7 @@ Generate [Lunr](https://lunrjs.com/) indexes for [Hugo](https://gohugo.io/) stat
 
 <br>
 <br>
-<a href="https://github.com/clarketm/hugo-lunr-indexer">
+<a href="https://blog.travismclarke.com/project/hugo-lunr-indexer/">
   <p align="center"><img width="40%" src="/hero.png" /></p>
 </a>
 
