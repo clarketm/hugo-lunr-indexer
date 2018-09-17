@@ -6,6 +6,12 @@
 
 Generate [Lunr](https://lunrjs.com/) indexes for [Hugo](https://gohugo.io/) static sites by parsing front matter.
 
+<br>
+<br>
+<a href="https://github.com/clarketm/hugo-lunr-indexer">
+  <p align="center"><img width="20%" src="/hero.png" /></p>
+</a>
+
 ## Installation
 
 #### Install with npm
